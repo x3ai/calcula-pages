@@ -113,6 +113,41 @@ p {
   font-weight: 600;
 }
 
+.lang-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 6px 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.lang-picker select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  font-weight: 600;
+  padding: 0 28px 0 4px;
+  min-height: 38px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='none' stroke='%23667085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' d='M2.5 4.5l3.5 3.5 3.5-3.5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+}
+
+.lang-picker select:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
 .section {
   margin-top: 20px;
   padding: 28px 32px;
@@ -152,11 +187,19 @@ p {
 }
 
 .language-block {
-  display: grid;
+  display: none;
   gap: 14px;
 }
 
-.language-block + .language-block {
+.language-block.is-active {
+  display: grid;
+}
+
+.no-js .language-block {
+  display: grid;
+}
+
+.no-js .language-block + .language-block {
   margin-top: 28px;
   padding-top: 28px;
   border-top: 1px solid var(--line);

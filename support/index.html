@@ -1,30 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Calcula Support</title>
   <meta name="description" content="Support page for Calcula, a scientific math keyboard for iPhone.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body>
+<body data-page="support">
   <main class="page">
     <header class="hero">
       <div class="brand"><span class="mark">=</span><span>Calcula</span></div>
-      <h1>Support</h1>
-      <p class="summary">Calcula is a scientific math keyboard for iPhone. Use this page for support, bug reports, and privacy information.</p>
-      <p class="badge">No account required</p>
+      <h1 data-i18n="support.heading">Support</h1>
+      <p class="summary" data-i18n="support.summary">Calcula is a scientific math keyboard for iPhone. Use this page for support, bug reports, and privacy information.</p>
+      <p class="badge" data-i18n="support.badge">No account required</p>
       <nav class="nav" aria-label="Page links">
-        <a href="../privacy/">Privacy Policy</a>
-        <a href="#en">English</a>
-        <a href="#zh-Hans">简体中文</a>
-        <a href="#zh-Hant">繁體中文</a>
+        <a href="../privacy/" data-i18n="nav.privacy">Privacy Policy</a>
+        <label class="lang-picker">
+          <span data-i18n="nav.language">Language</span>
+          <select id="lang-switcher" aria-label="Language">
+            <option value="en">English</option>
+            <option value="zh-Hans">简体中文</option>
+            <option value="zh-Hant">繁體中文</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </label>
       </nav>
     </header>
 
     <section class="section">
-      <h2>Contact</h2>
-      <p>For support, bug reports, or feature requests, email:</p>
+      <h2 data-i18n="support.contactHeading">Contact</h2>
+      <p data-i18n="support.contactBody">For support, bug reports, or feature requests, email:</p>
       <p><a class="email" href="mailto:calcula.support@gmail.com">calcula.support@gmail.com</a></p>
     </section>
 
@@ -94,9 +105,120 @@
       </div>
     </section>
 
+    <section class="section language-block" id="ja" lang="ja">
+      <h2>日本語</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>キーボードを有効にする</h3>
+          <p>iOSの設定を開いてCalculaをキーボードに追加し、任意の入力欄で地球儀キーを長押ししてCalculaに切り替えます。</p>
+        </article>
+        <article class="item">
+          <h3>結果を挿入する</h3>
+          <p>Calculaキーボードで式を入力し、=をタップすると結果が現在の入力欄に挿入されます。</p>
+        </article>
+        <article class="item">
+          <h3>科学関数</h3>
+          <p>キーボード上部のf(x)をタップすると、sin、cos、log、べき乗、平方根などの科学計算キーを表示できます。</p>
+        </article>
+        <article class="item">
+          <h3>設定</h3>
+          <p>Calcula Appを開くと、小数桁数や桁区切りなどの計算設定を調整できます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section language-block" id="ko" lang="ko">
+      <h2>한국어</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>키보드 활성화</h3>
+          <p>iOS 설정을 열어 Calcula를 키보드로 추가한 다음, 입력 필드에서 지구본 키를 길게 눌러 Calcula로 전환하세요.</p>
+        </article>
+        <article class="item">
+          <h3>결과 삽입</h3>
+          <p>Calcula 키보드로 수식을 입력하고 =를 탭하면 결과가 현재 입력 필드에 삽입됩니다.</p>
+        </article>
+        <article class="item">
+          <h3>과학 함수</h3>
+          <p>키보드 상단의 f(x)를 탭하면 sin, cos, log, 거듭제곱, 루트 같은 과학 계산 키를 표시할 수 있습니다.</p>
+        </article>
+        <article class="item">
+          <h3>설정</h3>
+          <p>Calcula App을 열어 소수 자릿수와 천 단위 구분 같은 계산 환경설정을 조정하세요.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section language-block" id="es" lang="es">
+      <h2>Español</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>Activar el teclado</h3>
+          <p>Abre los Ajustes de iOS, añade Calcula como teclado y mantén pulsada la tecla del globo en cualquier campo de texto para cambiar a Calcula.</p>
+        </article>
+        <article class="item">
+          <h3>Insertar un resultado</h3>
+          <p>Escribe una expresión con el teclado Calcula y toca = para insertar el resultado en el campo de texto actual.</p>
+        </article>
+        <article class="item">
+          <h3>Funciones científicas</h3>
+          <p>Toca f(x) en la cabecera del teclado para mostrar funciones científicas como sin, cos, log, potencias y raíces.</p>
+        </article>
+        <article class="item">
+          <h3>Ajustes</h3>
+          <p>Abre la app Calcula para ajustar la precisión decimal y las preferencias de separador de miles.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section language-block" id="fr" lang="fr">
+      <h2>Français</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>Activer le clavier</h3>
+          <p>Ouvrez les Réglages iOS, ajoutez Calcula comme clavier, puis maintenez la touche globe enfoncée dans n’importe quel champ de texte pour passer à Calcula.</p>
+        </article>
+        <article class="item">
+          <h3>Insérer un résultat</h3>
+          <p>Saisissez une expression avec le clavier Calcula et touchez = pour insérer le résultat dans le champ de texte actuel.</p>
+        </article>
+        <article class="item">
+          <h3>Fonctions scientifiques</h3>
+          <p>Touchez f(x) dans l’en-tête du clavier pour afficher des fonctions scientifiques comme sin, cos, log, puissances et racines.</p>
+        </article>
+        <article class="item">
+          <h3>Réglages</h3>
+          <p>Ouvrez l’app Calcula pour ajuster la précision décimale et les préférences de séparateur de milliers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section language-block" id="de" lang="de">
+      <h2>Deutsch</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>Tastatur aktivieren</h3>
+          <p>Öffne die iOS-Einstellungen, füge Calcula als Tastatur hinzu und halte in einem Textfeld die Globus-Taste gedrückt, um zu Calcula zu wechseln.</p>
+        </article>
+        <article class="item">
+          <h3>Ergebnis einfügen</h3>
+          <p>Gib mit der Calcula-Tastatur einen Ausdruck ein und tippe auf =, um das Ergebnis in das aktuelle Textfeld einzufügen.</p>
+        </article>
+        <article class="item">
+          <h3>Wissenschaftliche Funktionen</h3>
+          <p>Tippe in der Tastaturleiste auf f(x), um wissenschaftliche Funktionen wie sin, cos, log, Potenzen und Wurzeln anzuzeigen.</p>
+        </article>
+        <article class="item">
+          <h3>Einstellungen</h3>
+          <p>Öffne die Calcula App, um Dezimalstellen und Tausendertrennzeichen anzupassen.</p>
+        </article>
+      </div>
+    </section>
+
     <footer class="footer">
-      <p>Privacy Policy: <a href="../privacy/">Calcula Privacy Policy</a></p>
+      <p><span data-i18n="footer.privacyPrefix">Privacy Policy:</span> <a href="../privacy/" data-i18n="footer.privacyLink">Calcula Privacy Policy</a></p>
     </footer>
   </main>
+  <script src="../assets/lang-switcher.js" defer></script>
 </body>
 </html>
